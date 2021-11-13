@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,mCAAmC;CACjD;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,OAAO;CAC1B;;AAED,AAAA,QAAQ,CAAA;EACJ,MAAM,EAAE,IAAI;CAYf;;AAbD,AAEI,QAFI,CAEJ,EAAE,CAAC;EACC,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CAQtB;;AAZL,AAMQ,QANA,CAEJ,EAAE,CAIE,EAAE,CAAA;EACE,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,IAAI;CAEnB",
+    "sources": [
+        "../scss/stylin.scss",
+        "../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "stylin.css"
+}
