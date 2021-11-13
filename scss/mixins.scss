@@ -1,3 +1,11 @@
+@import "./variables";
+
 @mixin text-font {
     font-size: 10px;
+    color: $primary-color;
+}
+
+@mixin para-text {
+    color: rgb(88, 88, 88);
+    font-weight: lighter;
 }

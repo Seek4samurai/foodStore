@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins.scss";
 
 * {
   margin: 0;
@@ -7,20 +8,35 @@
 }
 
 body {
-  background-color: #dddddd;
+  background-color: $back-color;
 }
 
 .nav-bar{
-    height: 10vh;
-    ul {
-        display: flex;
-        flex-direction: row;
-
-        li{
-            padding: 10px 30px;
-            list-style: none;
-    
-        }
-
-    }
+  ul{
+    display: flex;
+    flex-direction: row;
+    background-color: $back-color;
+    left: 10%;
+    li{
+      padding: 10px 30px;
+      list-style: none;
+    }  
+  }
 }
+
+.background{
+  background: url(/img/lasagna.jpg);
+  background-size: cover;
+  height: 100vh;
+  border-radius: 10% 10% 30% 10%;
+  .head_text{
+    padding-left: 20%;
+    padding-top: 20%;
+}
+}
+
+.container{
+  max-width: 1920px;
+  margin: auto;
+}
+

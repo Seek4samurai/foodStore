@@ -8,10 +8,6 @@ body {
   background-color: #dddddd;
 }
 
-.nav-bar {
-  height: 10vh;
-}
-
 .nav-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,10 +16,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #dddddd;
+  left: 10%;
 }
 
 .nav-bar ul li {
   padding: 10px 30px;
   list-style: none;
+}
+
+.background {
+  background: url(/img/lasagna.jpg);
+  background-size: cover;
+  height: 100vh;
+  border-radius: 10% 10% 30% 10%;
+}
+
+.background .head_text {
+  padding-left: 20%;
+  padding-top: 20%;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
 }
 /*# sourceMappingURL=stylin.css.map */
