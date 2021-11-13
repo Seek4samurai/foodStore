@@ -33,7 +33,7 @@ body {
 }
 
 .background {
-  background: url(/img/lasagna.jpg);
+  background: url(/img/lasagna.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   border-radius: 10% 10% 30% 10%;
@@ -66,5 +66,22 @@ body {
   border-radius: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.section_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
 }
 /*# sourceMappingURL=stylin.css.map */
