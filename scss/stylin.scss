@@ -11,14 +11,21 @@ body {
   background-color: $back-color;
 }
 
+.container{
+  max-width: 1920px;
+  margin: auto;
+}
+
 .nav-bar{
   ul{
     display: flex;
     flex-direction: row;
     background-color: $back-color;
-    left: 10%;
+    padding: 20px 0;
+    padding-left: 8%;
     li{
-      padding: 10px 30px;
+      font-size: large;
+      padding: 10px 30px;  
       list-style: none;
     }  
   }
@@ -30,13 +37,20 @@ body {
   height: 100vh;
   border-radius: 10% 10% 30% 10%;
   .head_text{
-    padding-left: 20%;
-    padding-top: 20%;
+    padding-top: 15%;
+    padding-left: 7%;
+    color: $bold-color;
+    font-size: 80px;
+    h1{
+      max-width: 60vw;
+      font-size: 70px;
+    }
+    button{
+      @include _button;
+    }
+    button:hover{
+    border-radius: 10px;
+    transition: 0.3s;
+    }
+  }
 }
-}
-
-.container{
-  max-width: 1920px;
-  margin: auto;
-}
-

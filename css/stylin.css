@@ -8,6 +8,11 @@ body {
   background-color: #dddddd;
 }
 
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
 .nav-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,10 +22,12 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #dddddd;
-  left: 10%;
+  padding: 20px 0;
+  padding-left: 8%;
 }
 
 .nav-bar ul li {
+  font-size: large;
   padding: 10px 30px;
   list-style: none;
 }
@@ -33,12 +40,31 @@ body {
 }
 
 .background .head_text {
-  padding-left: 20%;
-  padding-top: 20%;
+  padding-top: 15%;
+  padding-left: 7%;
+  color: #e03d50;
+  font-size: 80px;
 }
 
-.container {
-  max-width: 1920px;
-  margin: auto;
+.background .head_text h1 {
+  max-width: 60vw;
+  font-size: 70px;
+}
+
+.background .head_text button {
+  background-color: #e03d50;
+  border: #e03d50 solid 8px;
+  border-radius: 20px;
+  color: #e2e2e2;
+  padding: 5px 10px;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.background .head_text button:hover {
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=stylin.css.map */
