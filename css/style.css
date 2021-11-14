@@ -1,115 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+a {
+  all: unset;
 }
 
 body {
   background-color: #dddddd;
 }
 
-.nav-bar {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-  position: sticky;
-  background-color: rgb(221, 221, 221);
-  background-blend-mode: darken;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 10%;
-  font-weight: lighter;
-  color: rgb(29, 29, 29);
-}
-
-.nav-list li {
-  padding: 0 25px;
-}
-
-.background {
-  background: url(/img/lasagna.jpg);
-  background-size: cover;
-  background-blend-mode: darken;
-  height: 100vh;
-  border-radius: 10% 10% 30% 10%;
-}
-
-.head_text {
-  max-width: 1300px;
+.container {
+  max-width: 1920px;
   margin: auto;
 }
-
-.head_text h1 {
-  display: flex;
-  display: block;
-  padding-top: 36vh;
-  padding-bottom: 10px;
-  font-weight: lighter;
-  font-size: 30px;
-  color: rgb(29, 29, 29);
-}
-
-.btn {
-  background-color: rgb(29, 29, 29);
-  border: rgb(29, 29, 29) solid 8px;
-  border-radius: 20px;
-  color: rgb(221, 221, 221);
-  padding: 5px 10px;
-}
-
-.btn:hover {
-  color: rgb(126, 126, 126);
-}
-
-#clock {
-  color: rgb(29, 29, 29);
-  display: flex;
-  padding-top: 50px;
-  font-size: 80px;
-}
-
-.section_2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  max-width: 1300px;
-  margin: auto;
-  padding-top: 100px;
-  text-align: center;
-}
-
-.section_3 {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1300px;
-  margin: auto;
-  padding-top: 100px;
-  text-align: center;
-}
-
-.paras {
-  color: rgb(29, 29, 29);
-  line-height: 46px;
-  padding: 0 25px;
-}
-
-.para_heading {
-  color: rgb(29, 29, 29);
-  font-size: 25px;
-}
-
-.para_img img {
-  padding: 50px 0;
-  border-radius: 9%;
-}
-
-.para_list {
-  list-style: none;
-  text-align: left;
-  line-height: 35px;
-}
-

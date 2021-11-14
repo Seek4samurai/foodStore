@@ -19,11 +19,12 @@
 }
 
 @mixin text-font {
+    @include dec-border();
     color: $primary-color;
     font-size: 16px;
     line-height: 40px;
     max-width: 700px;
-    @include dec-border();
+    padding-left: 15px;
 }
 
 @mixin text-heading {
@@ -41,5 +42,11 @@
     @include dec-border();
     img {
         border-radius: 9%;
+    }
+}
+
+@mixin button-hover {
+    a:hover {
+        background-color: $bold-color;
     }
 }

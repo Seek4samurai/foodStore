@@ -1,21 +1,6 @@
 @import "./variables";
 @import "./mixins.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-  background-color: $back-color;
-}
-
-.container {
-  max-width: 1920px;
-  margin: auto;
-}
-
 .nav-bar {
   ul {
     display: flex;
@@ -26,9 +11,10 @@ body {
     li {
       font-size: large;
       margin: 10px 30px;
-      list-style: none;
       color: $heading-color;
+      list-style: none;
       cursor: pointer;
+      @include button-hover;
     }
   }
 }
@@ -39,6 +25,7 @@ body {
   height: 100vh;
   border-radius: 10% 10% 30% 10%;
   .head_text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 15%;
     padding-left: 7%;
     color: $bold-color;
