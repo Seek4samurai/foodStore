@@ -68,6 +68,7 @@ body {
   text-align: center;
   .para_heading {
     @include text-heading;
+    border-width: 0 5px 5px 0px;
   }
   .paras {
     display: flex;
@@ -79,5 +80,18 @@ body {
   }
   .para_img {
     @include para-image;
+  }
+}
+
+.section_3 {
+  @extend .section_2;
+  flex-direction: row;
+  .para_1 {
+    border-width: 0 10px 0px 0px;
+  }
+  ul {
+    @include text-font;
+    list-style: none;
+    text-align: left;
   }
 }
