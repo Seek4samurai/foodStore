@@ -11,46 +11,49 @@ body {
   background-color: $back-color;
 }
 
-.container{
+.container {
   max-width: 1920px;
   margin: auto;
 }
 
-.nav-bar{
-  ul{
+.nav-bar {
+  ul {
     display: flex;
     flex-direction: row;
     background-color: $back-color;
     padding: 20px 0;
     padding-left: 8%;
-    li{
+    li {
       font-size: large;
-      padding: 10px 30px;  
+      margin: 10px 30px;
       list-style: none;
-    }  
+      color: $heading-color;
+      cursor: pointer;
+    }
   }
 }
 
-.background{
+.background {
   background: url(/img/lasagna.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   border-radius: 10% 10% 30% 10%;
-  .head_text{
+  .head_text {
     padding-top: 15%;
     padding-left: 7%;
     color: $bold-color;
     font-size: 80px;
-    h1{
+    h1 {
       max-width: 60vw;
       font-size: 70px;
     }
-    button{
+    button {
       @include _button;
     }
-    button:hover{
-    border-radius: 10px;
-    transition: 0.3s;
+    button:hover {
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 0.3s;
     }
   }
 }
@@ -58,9 +61,23 @@ body {
 .section_2 {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80vw;
   margin: auto;
   padding-top: 100px;
   text-align: center;
+  .para_heading {
+    @include text-heading;
+  }
+  .paras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .para_1 {
+    @include text-font;
+  }
+  .para_img {
+    @include para-image;
+  }
 }

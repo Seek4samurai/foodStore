@@ -1,15 +1,5 @@
 @import "./variables";
 
-@mixin text-font {
-    font-size: 10px;
-    color: $primary-color;
-}
-
-@mixin para-text {
-    color: rgb(88, 88, 88);
-    font-weight: lighter;
-}
-
 @mixin _button {
     background-color: $bold-color;
     border: $bold-color solid 8px;
@@ -17,5 +7,39 @@
     color: rgb(226, 226, 226);
     padding: 5px 10px;
     font-weight: bold;
-    transition: 0.3s ease-out
+    transition: 0.3s ease-out;
+}
+
+@mixin dec-border {
+    background-color: seashell;
+    border-color: $heading-bound;
+    border-style: solid;
+    border-width: 0 10px 10px 0px;
+    border-radius: 20px;
+}
+
+@mixin text-font {
+    color: $primary-color;
+    font-size: 16px;
+    line-height: 40px;
+    max-width: 700px;
+    @include dec-border();
+}
+
+@mixin text-heading {
+    @include dec-border();
+    color: $heading-color;
+    margin: 0 40%;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@mixin para-image {
+    display: flex;
+    justify-content: center;
+    @include dec-border();
+    img {
+        border-radius: 9%;
+    }
 }
