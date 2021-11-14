@@ -3,19 +3,12 @@
 
 .nav-bar {
   ul {
+    @include button-hover;
     display: flex;
     flex-direction: row;
     background-color: $back-color;
     padding: 20px 0;
     padding-left: 8%;
-    li {
-      font-size: large;
-      margin: 10px 30px;
-      color: $heading-color;
-      list-style: none;
-      cursor: pointer;
-      @include button-hover;
-    }
   }
 }
 
@@ -80,5 +73,13 @@
     @include text-font;
     list-style: none;
     text-align: left;
+    li {
+      max-width: 15vw;
+    }
+    a li:hover {
+      color: white;
+      background-color: $bold-color;
+      cursor: pointer;
+    }
   }
 }

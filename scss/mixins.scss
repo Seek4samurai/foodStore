@@ -14,7 +14,7 @@
     background-color: seashell;
     border-color: $heading-bound;
     border-style: solid;
-    border-width: 0 10px 10px 0px;
+    border-width: 0px 10px 10px 0px;
     border-radius: 20px;
 }
 
@@ -46,7 +46,14 @@
 }
 
 @mixin button-hover {
+    li {
+        font-size: large;
+        margin: 10px 30px;
+        color: $heading-color;
+        list-style: none;
+    }
     a:hover {
         background-color: $bold-color;
+        cursor: pointer;
     }
 }

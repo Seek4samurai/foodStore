@@ -16,11 +16,11 @@
   margin: 10px 30px;
   color: #353535;
   list-style: none;
-  cursor: pointer;
 }
 
-.nav-bar ul li a:hover {
+.nav-bar ul a:hover {
   background-color: #e03d50;
+  cursor: pointer;
 }
 
 .background {
@@ -160,5 +160,15 @@
   padding-left: 15px;
   list-style: none;
   text-align: left;
+}
+
+.section_3 ul li {
+  max-width: 15vw;
+}
+
+.section_3 ul a li:hover {
+  color: white;
+  background-color: #e03d50;
+  cursor: pointer;
 }
 /*# sourceMappingURL=stylin.css.map */
